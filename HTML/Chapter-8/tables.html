@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <h3>Creating a basic table in HTML</h3>
+    <!-- Creating a simple table in HTML -->
+    <!-- TO create a table we need to use table, tr, th and td tags -->
+    <table>
+        <!-- First row of the table is the headings of the table. -->
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!-- Table that demonstrates merging colums or rows -->
+    <h3>Using colspan and rowspan in table</h3>
+    <!-- colspan -->
+    <p>Using colspan to merge two colums</p>
+    <table border="1px solid">
+        <tr>
+            <th>Month</th>
+            <th>Credited</th>
+            <th>Debited</th>
+        </tr>
+
+        <tr>
+            <td>Jan</td>
+            <td>500</td>
+            <td>200</td>
+        </tr>
+
+        <tr>
+            <td>Feb</td>
+            <td>540</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td>Mar</td>
+            <td>200</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>Total</td>
+            <td colspan="2">$900</td>
+            
+        </tr>
+    </table>
+
+    <p>Using rowspan to merge two rows</p>
+    <table border="1px solid">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">1.</td>
+            <td rowspan="2">ABC</td>
+            <td>1111111111</td>
+        </tr>
+
+        <!-- While using rowspan, in the second row we only mention the data that needs to added in the second row i.e mobile number -->
+        <tr>
+            <td>2222222222</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">2.</td>
+            <td rowspan="2">XYZ</td>
+            <td>1231231231</td>
+        </tr>
+
+        <tr>
+            <td>1234567891</td>
+        </tr>
+    </table>
+
+    <h3>Grouping colums together for styling</h3>
+    <p>We can logically group columns using colgroup tag and colgroup tag should be a part of table tag.</p>
+    <table>
+        <colgroup span="2" style="background-color: burlywood;"></colgroup>
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>    
+    </table>
+
+    <p>Using col and colgroup tag to style HTML tables</p>
+    <!-- The <col> tag specifies column properties for each column within a <colgroup> element. -->
+    <table border="1px">
+        <colgroup>
+            <col span="2" style="background-color: steelblue;">
+            <!-- Setting width of the third column to 50% -->
+            <col style=" width: 50%;">
+            <col style="background-color: skyblue;">
+        </colgroup>
+
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>    
+    </table>
+
+    <h3>Table with thead, tbody, tfoot and caption</h3>
+    <p>In case of a table spanning over more than one page, thead and tfoot repeat on each page.</p>
+    <!-- Usually we want the headings of the table on every page where the table is printed so we add the table headings in thead tag. -->
+
+    <table border="1px solid">
+        <!-- caption tag is used to provide caption to table -->
+        <caption><b>Table 1:</b> Amount spent </caption>
+        <!-- thead tag contains the headings of the table -->
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Date</th>
+                <th>Amount Spent</th>
+            </tr>
+        </thead>
+
+        <!-- tbody will contain the table data i.e records -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>11/01/2023</td>
+                <td>500</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>13/01/2023</td>
+                <td>400</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>15/01/2023</td>
+                <td>550</td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot contains the footer that will be displayed under the table on every page where the table will be displayed -->
+        <tfoot>
+            <td colspan="2">Total</td>
+            <td>1450</td>
+        </tfoot>
+    </table>
+</body>
+</html>
