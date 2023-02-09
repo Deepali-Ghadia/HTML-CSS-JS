@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Control Elements in HTML</title>
+</head>
+<body>
+    <h2>Different input control elements in HTML</h2>
+    <h3>Input type: Text</h3>
+    <!-- Size of textbox changes depending on the size. Size is used for textbox and not number of characters. -->
+    <input type="text" value="Enter your name" size="30"><br><br>
+    <input type="text" value="Enter your address" size="100"><br><br>
+
+    <!-- For descriptive text -->
+    <label>Suggestions</label><br>
+    <textarea rows="5" cols="100"></textarea>
+
+    <h3>Input type: checkbox</h3>
+    <p>Select the subjects you have to study for the week.</p>
+    <!-- When I did not use label tag, only the check boxes were displayed and hence to give context i.e. what are the buttons for, you need to specify the button under label tag. -->
+    <!-- <input type="checkbox" value="Maths"><br>
+    <input type="checkbox" value="English"><br>
+    <input type="checkbox" value="Drawing"><br>
+    By specifying the value of checked attribute as checked, by default the checkbox is checked.
+    <input type="checkbox" value="Science" checked="checked"><br> --> 
+
+    <!-- Using label tag -->
+    <label>
+        <input type="checkbox" value="English"> Maths
+    </label>
+
+    <h3>Input type: radio</h3>
+</body>
+</html>
