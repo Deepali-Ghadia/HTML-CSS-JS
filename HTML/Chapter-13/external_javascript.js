@@ -1,0 +1,1 @@
+document.write("The content is displayed using external javascript file.")
