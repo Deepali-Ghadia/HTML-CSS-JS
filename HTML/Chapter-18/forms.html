@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+    <!-- This form collects user details -->
+    <p>This form collects user details.</p>
+    <!-- post method is used to send the data to the server on submitting the form -->
+    <!-- When we want to send a file to the server, we use enctype as multipart/form-data -->
+    <form action="#" enctype="multipart/form-data" method="post">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Enter your name" name="name" required><br><br>
+        <label for="email">Email Id: </label>
+        <input type="email" placeholder="Enter your email id" name="email" required><br><br>
+        <label for="date">Date of Birth: </label>
+        <input type="date" name="date" required><br><br>
+        <label for="mobile_number">Mobile Number: </label>
+        <input type="number" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" name="mobile_number" required><br><br>
+        <label for="profile">Profile Photo: </label>
+        <input type="file" accept="image/*" required><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+
+    </form>
+</body>
+</html>
