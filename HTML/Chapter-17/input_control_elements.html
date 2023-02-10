@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Control Elements in HTML</title>
 </head>
+
 <body>
     <h2>Different input control elements in HTML</h2>
     <h3>Input type: Text</h3>
@@ -17,20 +18,120 @@
     <label>Suggestions</label><br>
     <textarea rows="5" cols="100"></textarea>
 
+    <!-- Implementing checkbox -->
     <h3>Input type: checkbox</h3>
     <p>Select the subjects you have to study for the week.</p>
-    <!-- When I did not use label tag, only the check boxes were displayed and hence to give context i.e. what are the buttons for, you need to specify the button under label tag. -->
+    <!-- When I did not use label tag, only the check boxes were displayed and hence to give context i.e. what are the buttons for, you need to specify the button under label tag.  -->
     <!-- <input type="checkbox" value="Maths"><br>
     <input type="checkbox" value="English"><br>
     <input type="checkbox" value="Drawing"><br>
     By specifying the value of checked attribute as checked, by default the checkbox is checked.
     <input type="checkbox" value="Science" checked="checked"><br> --> 
 
-    <!-- Using label tag -->
-    <label>
-        <input type="checkbox" value="English"> Maths
-    </label>
+    <!-- Defining buttons under label tag enables the label to be selected when you click the correspondin checkbox -->
+    <input type="checkbox" name="subject" value="maths" id="maths">
+    <label for="maths">Maths</label><br>
+    <input type="checkbox" name="subject" value="english" id="english">
+    <label for="english">English</label><br>
+    <!-- checked specifies that the value will be checked by default -->
+    <input type="checkbox" name="subject" value="science" id="science" checked>
+    <label for="science">Science</label>
 
-    <h3>Input type: radio</h3>
+    <!-- Implementing radio button -->
+    <h3>Input type: radio button</h3>
+    <p>Select your favourite subject</p>
+    <input type="radio" name="subject" value="science" id="science">
+    <!-- id is used to refer the input while applying label to it -->
+    <label for="science">Science</label><br>
+    <input type="radio" value="english" id="english" name="subject">
+    <label for="english">English</label><br>
+    <input type="radio" value="maths" name="subject" id="maths">
+    <label for="maths">Maths</label>
+
+    <!-- Learning validation on input -->
+    <h3>Input Validation in HTML</h3>
+    <!-- Creating HTML form with input validation -->
+    <form>
+        <label for="name" required>Name</label>
+        <input type="text" id="name"><br><br>
+        <label for="age">Age</label>
+        <input type="number" min="12" max="24"><br><br>
+        <label for="profile">Profile</label>
+        <input type="file" accept="image/*"><br><br>
+        <input type="submit" value="Submit">
+        <!-- Adding formnovalidate attribute to the submit button prevents the form from validation -->
+    </form>
+
+    <h3>Input type: color</h3>
+    <input type="color" name="color">
+
+    <h3>Input type: password</h3>
+    <input type="password" name="password" placeholder="password">
+
+    <h3>Input type: file</h3>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Post method is used to send data to the server securely -->
+        <!-- While sending a file to the server we use enctype as multipart/form-data -->
+        Select file to upload:<br>
+        <input type="file" name="fileSubmission" id="fileSubmission"><br><br>
+        <!-- TO take multiple files as input we use muliple attribute in input tag -->
+        <!-- accept attribute is used to apply restrictions on the type of the file to be submitted -->
+        <input type="submit" value="Upload" name="submit" multiple accept="image/png"><br>
+       </form>
+       
+<!-- We create button using button tag so that the button can be styled using CSS and can contain other elements -->
+<!-- Creating button using input type restricts the styling of button and we cannot include other elements in it.-->
+    <h3>Input type: button</h3>
+    <p>This submit button is created using button input type</p>
+    <input type="button" value="Submit" onclick="alert('You clicked a button created using input type button')"><br>
+    <p>This button is created using button tag</p>
+    <button onclick="alert('You clicked a button created using button tag')">Submit</button>
+
+    <h3>Input type: submit</h3>
+    <button type="submit">
+        <img src="https://th.bing.com/th?id=OIP.RXLNlGFm8M6dVC0rp1UuCgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" width="50px" height="50px"> Submit
+    </button>
+
+    <!-- Reset is used to reset the contents of the form. -->
+    <h3>Input type: reset</h3>
+    <input type="reset" value="Reset">
+
+    <h3>Input type: tel and email</h3>
+    <form>
+        <input type="tel" placeholder="Enter your mobile number" pattern="[0-9]{3} [0-9]{3}"> <br><br>
+        <!-- Using input type as email stops user from entering an email id that violates the constraints of an email id -->
+        <input type="email" placeholder="Enter your email id">
+    <input type="submit" value="Submit">
+    </form>
+    
+    <h3>Input type: range</h3>
+    <input type="range" min="10" max="100" value="range">
+
+    <!-- search input type is used to create a search bar -->
+    <h3>Input type: search</h3>
+    <input type="search">
+       
+    <h3>Input type: image</h3>
+    <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1920px-SNice.svg.png" width="100px" height="100px">
+
+    <h3>Input type: date-time-local, week, month, time, DateTime(global), Date</h3>
+    <h4>Date-time local</h4>
+    <input type="datetime-local">
+
+    <h4>Week</h4>
+    <input type="week">
+
+    <h4>Month</h4>
+    <input type="month">
+
+    <h4>Time</h4>
+    <input type="Time">
+
+    <h4>Date-Time Global</h4>
+    <input type="datetime">
+
+    <h4>Date</h4>
+    <input type="date">
+
 </body>
 </html>
