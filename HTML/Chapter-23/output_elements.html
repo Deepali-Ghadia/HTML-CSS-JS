@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Elements in HTML</title>
+</head>
+<body>
+    <h2>Output tag in HTML</h2>
+    <p>The output tag is used to represent the result of a calculation.</p>
+    <!-- Basic form that takes input from the user in order to perform operations on that data -->
+    <!-- The oninput attribute fires when an element gets user input. The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems). -->
+
+    <!-- This example performs addition on the data -->
+    <form id="add-form" oninput="out.value = parseInt(input1.value, 10) + parseInt(input2.value, 10)">
+        <input type="number" id="input1" placeholder="Enter a positive integer" min="1"> + 
+        <input type="number" id="input2" placeholder="Enter a positive integer" min="1"> = 
+        <output form="add-form" for="input1, input2" name="out"></output>
+    </form>
+
+   
+</body>
+</html>
