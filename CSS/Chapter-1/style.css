@@ -6,3 +6,11 @@ h1 {
     font-size: 25px;
     font-family: 'Trebuchet MS', sans-serif;
    }
+
+   #first{
+    list-style-type: square;
+   }
+
+   #second{
+    list-style-type: circle;
+   }
