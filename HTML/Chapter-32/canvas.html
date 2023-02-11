@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+
+    <style>
+        canvas{
+        border:1px solid gray;
+        }
+        </style>
+   
+
+</head>
+    <body>
+        <!-- Canvas provides a container for drawing graphics. In canvas we create graphics using HTML canvas -->
+        <canvas id="my-canvas" width=300 height=200 style="border: 1px solid teal;">Your browser does not support canvas.</canvas>
+
+        <script>
+            // Finding canvas element
+            var canvas = document.getElementById("my-canvas");
+            // Creating a drawing object for canvas
+            var ctx = canvas.getContext("2d");
+            // Draw on the canvas
+            // Providing the fill size
+            ctx.fillStyle='green';
+            // Parameters are x, y, width, height
+            ctx.fillRect(70,70 , 190, 100 ) ;
+            ctx.font = "30px Arial";
+            ctx.strokeText("Text inside Canvas", 10, 50);
+        </script>
+ 
+</body>
+</html>
