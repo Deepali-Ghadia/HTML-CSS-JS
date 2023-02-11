@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attributes</title>
+</head>
+<body>
+    <h3>Onblur Event</h3>
+    <!-- On blur -->
+    <!-- The onblur attribute fires the moment that the element loses focus. -->
+    <p>As soon as you come out of the input box, the text will be changed to uppercase</p>
+    Enter your name: <input type="text" name="fname" id="fname" onblur="Function1()">
+
+    <h3>Onfocus Event</h3>
+    <p>The function changes the background-color of the input field when you click the input field.</p>
+    First name: <input type="text" id="name" onfocus="myFunction(this.id)">
+
+
+    <h3>Oninvalid event</h3>
+    <p>Alert is raised when user tries to submit the form without filling it.</p>
+    <form>
+        <input type="number" name="mobile_number" placeholder="Enter your mobile number" oninvalid="alert('You must fill out the form!');" required>
+        <input type="submit">
+    </form>
+
+
+
+    <script>
+        function Function1() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+        }
+
+        function myFunction(x) {
+        document.getElementById(x).style.background = "yellow";
+        }
+    </script>
+</body>
+</html>
