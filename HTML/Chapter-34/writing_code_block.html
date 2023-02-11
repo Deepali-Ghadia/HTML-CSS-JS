@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing code in HTML </title>
+</head>
+<body>
+    <H2>Writing code block in HTML using &lt;pre> tag and &lt;code> tag</H2>
+    <!-- Example where the spaces and indents are taken as it is  -->
+    <pre style="background-color: aquamarine; width: 500px;">
+    <code>
+    fruits = ["apple", "banana", "cherry"]
+    for x in fruits:
+        if x == "banana":
+        break
+        print(x)
+    </code>
+       </pre>
+
+    <pre style="background-color: aquamarine; width: 500px;">
+        <code>
+            fruits = ["apple", "banana", "cherry"]
+            for x in fruits:
+              if x == "banana":
+                break
+              print(x)
+        </code>
+    </pre>
+
+    <p><i>Note: In both the above code snippets the indents that was provided in the text, is displayed as it is.</i></p>
+    
+    <h3>Without using &lt;code> tag</h3>
+    <pre style="background-color: aquamarine; width: 500px;">
+    fruits = ["apple", "banana", "cherry"]
+    for x in fruits:
+        if x == "banana":
+        break
+        print(x)
+    </pre>
+    
+    <p><b>Note: </b><i>Both &lt;pre> and &lt;code> tag works the same. But to represent code snippet we usually use &lt;code> tag. And using just code tag does not represent the code snippet as we want.</i></p>
+
+    <p>The below example shows the output when we use &lt;code> tag without using &lt;pre> tag.</p>
+    <code>
+        fruits = ["apple", "banana", "cherry"]
+        for x in fruits:
+          if x == "banana":
+            break
+          print(x)
+    </code>
+</body>
+</html>
