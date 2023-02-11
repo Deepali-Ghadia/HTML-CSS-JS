@@ -14,7 +14,18 @@
     <h3>Adding an image from web URL in HTML </h3>
     <img src="https://th.bing.com/th/id/OIP.nPShTLUCS11umIwVGVcM4wHaHa?w=214&h=214&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="HTML5 image from web">
 
+
+    <!-- Resource Referred - https://medium.com/@woutervanderzee/responsive-images-with-srcset-and-sizes-fc434845e948 -->
     <h3>Responsive image using srcset attribute</h3>
-    
+    <img alt="image alt text" 
+        src="large.jpg" 
+        srcset=" small.jpeg 200w, medium.jpeg 300w, large.jpg 415w" 
+        sizes= "(min-width: 960px) 720px, 100vw "
+    >
+    <!-- srcset - we specify the list of the images along with their width -->
+    <!-- sizes - 
+        if viewport width equals to 960px or greater than show the image with a width of 540px,
+        if the viewport width is smaller than 960px than show the image as wide as the viewport (100vw means 100% of the viewport width). 
+    -->
 </body>
 </html>
