@@ -14,13 +14,27 @@
     div[data-color="red"]{
         background-color: wheat;
     }
+
+    /* COntains the pattern anywhere in the value of the attribute i.e. oo is present anywhere in the class value*/
+    [class*="oo"]{
+        text-align: center;
+    }
+
+    /* Contains the value of the attribute starting with this pattern i.e. foo */
+    [class^="foo"]{
+        border: 2px solid purple;
+    }
+
+    [class$="123"]{
+        font-size: 30px;
+    }
     </style>
 </head>
 <body>
     <h2>Attribute Selectors in HTML</h2>
-    <div data-color="red">This will be red</div>
-    <div data-color="green">This will be red</div>
-    <div data-background="red">This will NOT be red</div>
+    <div data-color="red" class="oofoo123">This will be red</div><br>
+    <div data-color="green" class="foo-123">This will be red</div><br>
+    <div data-background="red" class="foo-123-foo">This will NOT be red</div>
 
 
 </body>
