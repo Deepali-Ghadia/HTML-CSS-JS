@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling fonts in HTML</title>
+
+    <style>
+        p{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Styled the font of p having id first-para using font shorthand */
+        p[id="first-para"]{
+            font: bold 10px sans-serif;
+            font-stretch: ultra-expanded;
+            /* sets the indentation of the starting line */
+            text-indent: 500px;
+            word-spacing: 10px;
+            letter-spacing: 10px;
+        }
+
+      
+        #two{
+            quotes: "//" "//"
+        }
+
+        /* text direction is set to right-to-left */
+        #second-para{
+            direction: rtl;
+        }
+
+        h1{
+            font-size: 50px;
+            /* Third parameter defines the blur radius of the shadow */
+            text-shadow: 2px 2px 90px purple;
+            letter-spacing: 10px;
+            font-variant: small-caps;
+        }
+
+        #third-para{
+            /* capitalise -> each word starts with capital  */
+            /* uppercase -> all the letters are changed to capital*/
+            text-transform: uppercase;
+        }
+
+        /* applying text decoration to text */
+        #fourth-para{
+            text-decoration: line-through;
+        }
+
+        #fifth-para{
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loreum Ipsum Dolar</h1>
+    <p id="first-para">
+        Lorem ipsum dolor sit amet, consecteturadipiscingelit,seddo aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+    </p>
+
+    <q id="one">Never interrupt your enemy when he is making a mistake.</q><br>
+    <q id="two">Never interrupt your enemy when he is making a mistake.</q><br>
+
+    <p id="second-para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+
+        Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Vel facilisis volutpat est velit. Nunc sed id semper risus. Suspendisse sed nisi lacus sed. Quisque egestas diam in arcu cursus. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Pellentesque id nibh tortor id aliquet lectus proin. Molestie nunc non blandit massa enim nec dui nunc. Adipiscing bibendum est ultricies integer quis auctor elit sed. Scelerisque eu ultrices vitae auctor. Feugiat in ante metus dictum at tempor commodo.
+    </p>
+
+    <h4>Implementing text transform</h4>
+    <p id="third-para">Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.</p>
+
+    <h3>Implementing text-decoration</h3>
+    <p id="fourth-para"> Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.</p>
+    <p id="fifth-para"> Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.</p>
+</body>
+</html>
