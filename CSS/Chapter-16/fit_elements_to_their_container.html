@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimally fit elements to their container</title>
+
+    <style>
+        .flex-container {
+            background-color: #000;
+            height: 100%;
+            display:flex;
+            flex-direction: row;
+            /* wrap flex items if all the items cannot be shown in a single line --> similar to text-wrap */
+            flex-wrap: wrap;
+            /* position items at the beginning of the container */
+            justify-content: flex-start;
+            /* similar to align-items but used for flex wrap */
+            /* property specifies how flex lines are distributed along the cross axis */
+            align-content: stretch;
+            align-items: stretch;
+        }
+        .flex-item {
+            background-color: #ccf;
+            margin: 0.1em;
+            /* specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+            /* syntax: flex-grow: number|initial|inherit; */
+            flex-grow: 1;
+            /* specifies how the item will shrink relative to the rest of the flexible items inside the same container. */
+            /* syntax: flex-shrink: number|initial|inherit; */
+            flex-shrink: 0;
+            /* specifies the initial length of a flexible item. */
+            /* syntax: flex-basis: number|auto|initial|inherit; */
+            flex-basis: 200px; /* or % could be used to ensure a specific layout */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+       </div>
+</body>
+</html>
