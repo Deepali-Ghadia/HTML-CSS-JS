@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning More Complex Specificity with the help of an example</title>
+
+    <style>
+        div {
+            font-size: 7px;
+            border: 3px dotted pink;
+            background-color: yellow;
+            color: purple;
+        }
+        
+            body.mystyle > div.myotherstyle {
+            font-size: 11px;
+            background-color: green;
+        }
+
+        #elmnt1 {
+            font-size: 24px;
+            border-color: red;
+        }
+
+        .mystyle .myotherstyle {
+            font-size: 16px;
+            background-color: black;
+            color: red;
+        }
+    </style>
+
+</head>
+<body class="mystyle">
+    <div id="elmnt1" class="myotherstyle">
+    Hello, world!
+    </div>
+   </body>
+</html>
