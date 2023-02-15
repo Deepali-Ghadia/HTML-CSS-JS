@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        #first-table{
+            width: 150px;
+            table-layout: fixed;
+       }
+
+       #second-table{
+        width: 50px;
+        table-layout: auto;
+        border-spacing: 10px;
+       }
+
+       #third-table{
+        border-collapse: collapse;
+       }
+
+       #fourth-table{
+        caption-side: bottom;
+       }
+
+       #fifth-table{
+        caption-side: top;
+       }
+    </style>
+</head>
+<body>
+    <h3>table width is 150px and table layout is fixed</h3>
+    <table id="first-table">
+        <!-- First row of the table is the headings of the table. -->
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <h3>table width is 50px and table layout is auto and border spacing is 2px</h3>
+    <table id="second-table">
+        <tr>
+            <th>Month</th>
+            <th>Credited</th>
+            <th>Debited</th>
+        </tr>
+
+        <tr>
+            <td>Jan</td>
+            <td>500</td>
+            <td>200</td>
+        </tr>
+
+        <tr>
+            <td>Feb</td>
+            <td>540</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td>Mar</td>
+            <td>200</td>
+            <td>100</td>
+        </tr>
+
+        <tr>
+            <td>Total</td>
+            <td colspan="2">$900</td>
+            
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <h3>border of the table is collapsed to form a single line border</h3>
+    <table  id="third-table">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">1.</td>
+            <td rowspan="2">ABC</td>
+            <td>1111111111</td>
+        </tr>
+
+        <!-- While using rowspan, in the second row we only mention the data that needs to added in the second row i.e mobile number -->
+        <tr>
+            <td>2222222222</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">2.</td>
+            <td rowspan="2">XYZ</td>
+            <td>1231231231</td>
+        </tr>
+
+        <tr>
+            <td>1234567891</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    
+    <h3>Caption is set to bottom</h3>
+    <table id="fourth-table">
+        <caption>Student Details</caption>
+        <colgroup span="2" style="background-color: burlywood;"></colgroup>
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>    
+    </table>
+
+    <br>
+    <br>
+
+    <h3>Caption is set to top</h3>
+    <table id="fifth-table">
+        <caption>Student Details</caption>
+        <colgroup>
+            <col span="2" style="background-color: steelblue;">
+            <!-- Setting width of the third column to 50% -->
+            <col style=" width: 50%;">
+            <col style="background-color: skyblue;">
+        </colgroup>
+
+        <tr>
+            <th>Sr. No</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Email Id</th>
+        </tr>
+        <!-- From the second row, we start adding the actual contents -->
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>1111111111</td>
+            <td>abc@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>XYZ</td>
+            <td>2222222222</td>
+            <td>xyz@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>PQR</td>
+            <td>3333333333</td>
+            <td>pqr@gmail.com</td>
+        </tr>    
+    </table>
+</body>
+</html>
