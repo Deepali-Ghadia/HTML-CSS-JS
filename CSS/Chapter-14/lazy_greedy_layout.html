@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Lazy/ Greedy Layout</title>
+
+    <style>
+        /* this sidebar is lazy i.e. it takes the space it needs */
+        .sidebar {
+            /* `display:table;` shrink-wraps the column */
+            display:table;
+            float:left;
+            background-color:blue;
+        }
+        /* This sidebar is greedy, it takes all the remaining space */
+        .content {
+            /* `overflow:hidden;` prevents `.content` from flowing under `.sidebar` */
+            overflow:hidden;
+            background-color:yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Sidebar</h1>
+        <img src="https://th.bing.com/th/id/OIP.1d7TQI67pwfr0F5jqTgD1AHaGw?w=200&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
+    </div>
+    <div class="content">
+        <h1>Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+        cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis
+        ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia
+        arcu eget nulla. </p>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque
+        nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin
+        ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non,
+        massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper
+    vel, tincidunt sed, euismod in, nibh. </p>
+    </div>
+</body>
+</html>
