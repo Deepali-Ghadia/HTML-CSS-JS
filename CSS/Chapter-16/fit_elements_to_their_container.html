@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimally fit elements to their container</title>
+
+    <style>
+        .flex-container {
+            background-color: #000;
+            height: 100%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
+        }
+        .flex-item {
+            background-color: #ccf;
+            margin: 0.1em;
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 200px; /* or % could be used to ensure a specific layout */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+       </div>
+</body>
+</html>
