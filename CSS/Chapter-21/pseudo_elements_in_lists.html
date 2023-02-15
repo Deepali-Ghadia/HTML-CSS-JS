@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements in Lists</title>
+
+    <style>
+        ul {
+            /* to remove the bullets */
+            list-style-type: none;
+        }
+
+        li:before {
+            content: "";
+            /* both the list item and the bullet symbol should be in single line */
+            display: inline-block;
+            margin-right: 10px;
+            height: 10px;
+            width: 10px;
+            background: linear-gradient(red, blue);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- We use pseudo elements in unordered lists to change the list-style-type i.e. type of bullets of list items. -->
+    <ul>
+        <li>Test I</li>
+        <li>Test II</li>
+    </ul>
+       
+</body>
+</html>
