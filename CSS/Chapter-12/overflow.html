@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+        div{
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: justify;
+        }
+
+        #first-div, #third-div{
+            float: left;
+            background: rgb(120, 182, 182);
+        }
+
+        #second-div, #fourth-div{
+            float: right;
+            background: rgb(158, 103, 158);
+            overflow-wrap: break-word;
+        }
+
+        #third-div{
+            width: 100px;
+            height: 130px;
+            /* break-word states that the word will be breaked-down into multiple lines based on the size of the container. */
+            overflow-wrap:break-word;
+            /* the content beyond the size of the div will be shown on scrolling */
+            overflow: scroll;
+            background: palevioletred;
+        }
+
+        #fourth-div{
+            width: 400px;
+            height: 200px;
+            overflow-wrap: break-word;
+            background: rgb(113, 155, 113);
+            /* The content beyond the size of the div will be visible on the webpage. */
+            overflow: visible;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="first-div">
+        Lorem ipsum dolor sit amet, consecteturadipiscingelit,seddo <b>eiusmodtemporincididuntutlaboreetdoloremagna </b> aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+
+        Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Vel facilisis volutpat est velit. Nunc sed id semper risus. Suspendisse sed nisi lacus sed. Quisque egestas diam in arcu cursus. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Pellentesque id nibh tortor id aliquet lectus proin. Molestie nunc non blandit massa enim nec dui nunc. Adipiscing bibendum est ultricies integer quis auctor elit sed. Scelerisque eu ultrices vitae auctor. Feugiat in ante metus dictum at tempor commodo.
+    </div>
+
+    <div id="second-div">
+        Lorem ipsum dolor sit amet, consecteturadipiscingelit,seddo <b>eiusmodtemporincididuntutlaboreetdoloremagna </b> aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+
+        Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Vel facilisis volutpat est velit. Nunc sed id semper risus. Suspendisse sed nisi lacus sed. Quisque egestas diam in arcu cursus. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Pellentesque id nibh tortor id aliquet lectus proin. Molestie nunc non blandit massa enim nec dui nunc. Adipiscing bibendum est ultricies integer quis auctor elit sed. Scelerisque eu ultrices vitae auctor. Feugiat in ante metus dictum at tempor commodo.
+    </div>
+
+    <div id="third-div">
+        Lorem ipsum dolor sit amet, consecteturadipiscingelit,seddo <b>eiusmodtemporincididuntutlaboreetdoloremagna </b> aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+
+        Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Vel facilisis volutpat est velit. Nunc sed id semper risus. Suspendisse sed nisi lacus sed. Quisque egestas diam in arcu cursus. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Pellentesque id nibh tortor id aliquet lectus proin. Molestie nunc non blandit massa enim nec dui nunc. Adipiscing bibendum est ultricies integer quis auctor elit sed. Scelerisque eu ultrices vitae auctor. Feugiat in ante metus dictum at tempor commodo.
+    </div>
+
+    <div id="fourth-div">
+        Lorem ipsum dolor sit amet, consecteturadipiscingelit,seddo <b>eiusmodtemporincididuntutlaboreetdoloremagna </b> aliqua. At imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet bibendum enim facilisis gravida neque convallis a. Nibh praesent tristique magna sit amet purus gravida. Eu non diam phasellus vestibulum lorem sed risus ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictumst quisque sagittis purus sit amet volutpat. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Egestas quis ipsum suspendisse ultrices gravida. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Nunc sed id semper risus in hendrerit gravida. Id nibh tortor id aliquet lectus. Sit amet nisl purus in mollis nunc. Nam at lectus urna duis convallis convallis tellus. Gravida quis blandit turpis cursus. Tristique magna sit amet purus gravida. Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eu sem integer vitae justo eget magna fermentum.
+
+        Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Vel facilisis volutpat est velit. Nunc sed id semper risus. Suspendisse sed nisi lacus sed. Quisque egestas diam in arcu cursus. Pellentesque dignissim enim sit amet venenatis urna cursus eget. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Pellentesque id nibh tortor id aliquet lectus proin. Molestie nunc non blandit massa enim nec dui nunc. Adipiscing bibendum est ultricies integer quis auctor elit sed. Scelerisque eu ultrices vitae auctor. Feugiat in ante metus dictum at tempor commodo.
+    </div>
+
+    
+</body>
+</html>
