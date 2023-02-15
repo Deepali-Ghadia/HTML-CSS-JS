@@ -1,0 +1,58 @@
+<!-- depth of the element is measured using z-index -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping elements using z-index</title>
+
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            /* because of this CSS property the div overlapped each other */
+            /* the element should be placed with respect to its next element */
+            position: absolute;
+        }
+        #div1{
+           background-color: blueviolet; 
+           /* the element with higher z-index will be at the top */
+           z-index: 3;
+        }
+
+        #div2{
+            /* this div tag wont move on scrolling as well */
+            position: fixed;
+            background: purple;
+            z-index: 1;
+            left: 100px;
+            top:200px;
+        }
+
+        #div3{
+            background-color: indigo;
+            z-index: 2;
+            left: 300px;
+            top:300px;
+        }
+
+        #div4{
+            background-color: red;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            top: 600px;
+            left: 800px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4">Relative Position</div>
+
+</body>
+</html>
