@@ -13,7 +13,8 @@
             background-color:pink;
             /* Floated elements don't use any height. Adding "overflow:hidden;" forces the
             parent element to expand to contain its floated children. */
-            overflow:hidden;
+            /* If we don't use the overflow: hidden, then the wrapper will be on the top and will not cover the other two elements. */
+            overflow: hidden;
         }
         .sidebar {
             width:150px;
