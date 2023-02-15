@@ -1,0 +1,41 @@
+<!-- flex container -> the parent element; becomes flex container by setting the display property to flex. -->
+<!-- flex items - the child elements of flex container -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        /* Flex poperties are applied to the parent container. We specify two attributes i.e. flex- direction and justify content */
+        #container{
+            background: steelblue;
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            /* align the child items along the axis other than the flex direction */
+            align-items: center;
+            /* align items according to the axis of flex-direction */
+            justify-content: center;
+        }
+        
+        #container > div {
+            background-color: violet;
+            padding: 10px;
+            margin: 50px;
+            font-size: 90px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
