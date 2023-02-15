@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        /* add vitae before the contents of the div */
+        div::after {
+            content: 'vitae';
+            color: red;
+            border: 1px solid red;
+        }
+        div {
+            color: black;
+            border: 1px solid black;
+            padding: 1px;
+            font-size: 2em;;
+        }
+        /* add vitae before the contents of the div */
+        div::before {
+            content: 'vitae';
+            color: green;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Neque volutpat ac tincidunt vitae semper. Quis lectus nulla at volutpat diam ut. Enim facilisis gravida neque convallis. Eget egestas purus viverra accumsan in nisl. Vel elit scelerisque mauris pellentesque pulvinar. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Tristique nulla aliquet enim tortor at. Consectetur lorem donec massa sapien faucibus et.
+
+        Massa vitae tortor condimentum lacinia quis vel eros donec ac. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Aliquam ut porttitor leo a. Sit amet justo donec enim. In fermentum posuere urna nec tincidunt praesent. Odio tempor orci dapibus ultrices in iaculis nunc sed. Nulla at volutpat diam ut venenatis tellus in. Molestie at elementum eu facilisis. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.
+
+        Auctor urna nunc id cursus. Massa enim nec dui nunc mattis enim ut. Nisi est sit amet facilisis magna etiam. Mus mauris vitae ultricies leo integer malesuada nunc. Tellus rutrum tellus pellentesque eu. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Dictum sit amet justo donec enim. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Phasellus egestas tellus rutrum tellus pellentesque eu. A condimentum vitae sapien pellentesque habitant. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Netus et malesuada fames ac turpis. Porttitor lacus luctus accumsan tortor posuere. Tempus egestas sed sed risus pretium. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Sollicitudin tempor id eu nisl nunc mi. Aliquam ultrices sagittis orci a scelerisque. Id volutpat lacus laoreet non curabitur gravida. Aliquam id diam maecenas ultricies mi.
+    </div>
+</body>
+</html>
