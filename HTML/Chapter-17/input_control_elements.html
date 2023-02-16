@@ -29,12 +29,12 @@
     <input type="checkbox" value="Science" checked="checked"><br> --> 
 
     <!-- Defining buttons under label tag enables the label to be selected when you click the correspondin checkbox -->
-    <input type="checkbox" name="subject" value="maths" id="maths">
+    <input type="checkbox" value="maths" id="maths">
     <label for="maths">Maths</label><br>
-    <input type="checkbox" name="subject" value="english" id="english">
+    <input type="checkbox"  value="english" id="english">
     <label for="english">English</label><br>
     <!-- checked specifies that the value will be checked by default -->
-    <input type="checkbox" name="subject" value="science" id="science" checked>
+    <input type="checkbox"  value="science" id="science" checked>
     <label for="science">Science</label>
 
     <!-- Implementing radio button -->
@@ -42,6 +42,7 @@
     <p>Select your favourite subject</p>
     <input type="radio" name="subject" value="science" id="science">
     <!-- id is used to refer the input while applying label to it -->
+    <!-- radio buttons are identified using same name attribute -->
     <label for="science">Science</label><br>
     <input type="radio" value="english" id="english" name="subject">
     <label for="english">English</label><br>
