@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition using longhand</title>
+
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            /* specifies the attributes on which the transition needs to be applied */
+            transition-property: height, width;
+            /* specifies the time-duration of the transition */
+            transition-duration: 1s, 500ms;
+            /* linear transition-timing-function specifies that the transition speed will be same from start to end.  */
+            transition-timing-function: linear;
+            /* specifies the delay after which the transition effect will start */
+            transition-delay: 0s, 1s;
+        }
+        div:hover {
+            height: 200px;
+            width: 200px;
+        }
+        /* The change in CSS properties can be achieved through pseudo classes as well but it is not smooth. */
+        /* If we use the transition properties, then the change will be smooth */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
