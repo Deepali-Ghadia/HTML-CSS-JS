@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations using keyframes</title>
+
+    <style>
+        /* The @keyframes rule specifies the animation code. The animation is created by gradually changing from one set of CSS styles to another. */
+
+        /* defining a keyframe */
+        /* percentage values represent the amount of total transition time */
+        @keyframes rainbow-background {
+            0% { background-color: #ff0000; }
+            8.333% { background-color: #ff8000; }
+            16.667% { background-color: #ffff00; }
+            25.000% { background-color: #80ff00; }
+            33.333% { background-color: #00ff00; }
+            41.667% { background-color: #00ff80; }
+            50.000% { background-color: #00ffff; }
+            58.333% { background-color: #0080ff; }
+            66.667% { background-color: #0000ff; }
+            75.000% { background-color: #8000ff; }
+            83.333% { background-color: #ff00ff; }
+            91.667% { background-color: #ff0080; }
+            100.00% { background-color: #ff0000; }
+        }
+
+        div {
+            width: 400px;
+            height: 400px;
+            background: red;
+            position: relative;
+            /* first value specifies the keyframe using which we apply the animations */
+            /* second values specifies the duration of the complete animation */
+            /* third value is the animation-iteration-count -> once | infinite */
+            animation: rainbow-background 0.5s infinite;
+            border: 0px solid;
+            border-radius: 500px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+</body>
+</html>
