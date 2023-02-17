@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var() function</title>
+
+    <style>
+        /* To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element. */
+
+        /* To create a variable with local scope, declare it inside the selector that is going to use it. */
+        
+        :root{
+            --primary-color: blue;
+            --secondary-color: yellow;
+        }
+
+        body{
+            background-color: var(--primary-color);
+        }
+
+        div{
+            width: 400px;
+            height: 500px;
+            background-color: var(--secondary-color);
+            padding: 20px;
+        }
+
+        #inner-div{
+            width: 300px;
+            height: 150px;
+            background-color: var(--primary-color);
+            margin: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- var function is used for CSS variables -->
+    <div>
+        <div id="inner-div"></div>
+    </div>
+
+</body>
+</html>
