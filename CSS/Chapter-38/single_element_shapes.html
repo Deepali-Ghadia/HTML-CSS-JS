@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating various single element shapes</title>
+
+    <style>
+    /* shapes are formed using border properties. Some borders are set to transparent and some are set to color */
+
+        /* trapezoid */
+        #trapezoid{   
+            outline: 2px solid red;  
+            width: 100px;
+            border-left: 50px solid whitesmoke;
+            border-right: 50px solid whitesmoke;
+            border-bottom: 100px solid yellowgreen;
+            }
+            
+        #triangle{
+            width: 0;
+            height: 0;
+            background-color: aquamarine;
+            border-left: 50px solid whitesmoke;
+            border-right: 50px solid whitesmoke;
+            border-bottom: 100px solid yellow;
+        }
+
+        #circle{
+            background-color: teal;
+            border: 2px solid black;
+            /* in circle width and height are same */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        #ellipse{
+            background-color: green;
+            border: 2px solid black;
+            /* in circle width and height are same */
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>1. Trapezoid</h3>
+    <div id="trapezoid"></div>
+
+    <h3>2. Triangle</h3>
+    <div id="triangle"></div>
+
+    <h3>3. Circle</h3>
+    <div id="circle"></div>
+
+    <h3>4. Ellipse</h3>
+    <div id="ellipse"></div>
+
+    <h3>5. Bursts</h3>
+
+    <h3>6. Point Bursts</h3>
+
+    <h3>7. Square</h3>
+
+
+    <h3>8. Cube</h3>
+
+    <h3>9. Pyramid</h3>
+</body>
+</html>
