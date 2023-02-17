@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+
+    <style>
+        /* inherited properties are: font, color, text-align, line-height */
+        #outer-div{
+            width: 400px;
+            height: 400px;
+            background-color: teal;
+            padding: 100px;
+            border: 5px dotted black;
+            
+        }
+
+        #inner-div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            padding: inherit;
+            border: inherit;
+
+
+        }
+
+        #innermost-div{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            /* inherits color from its parent element. Its parent element is the inner div and its color is yellow */
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer-div">
+        <div id="inner-div">Inner Div Element
+            <div id="innermost-div"></div>
+        </div>
+    </div>
+</body>
+</html>
