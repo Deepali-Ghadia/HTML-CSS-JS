@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a compass needle using 3D transforms</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 150px;
+            background-color: rgb(114, 82, 82);
+            font-size: 2em;
+            padding: 20px;
+            text-align: center;
+            margin: 150px;
+        }
+
+        #second-step{
+            transform: rotateZ(45deg);
+        }
+
+        #final{
+            transform: rotateY(85deg) rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="first-step">Step 1</div>
+    <div id="second-step">Step 2</div>
+    <div id="final"></div>
+</body>
+</html>
