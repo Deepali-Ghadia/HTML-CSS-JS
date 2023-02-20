@@ -53,12 +53,13 @@ var student_list = [
 console.log(student_list);// table will be printed with by-default index
 console.table(student_list, ['Email Id', 'Name']); // table with email-id and name having by-default index
 
-
-
-// counting
-
 // clearing the console
+console.clear();
 
-// displaying objects and console interactively
 
 // debugging with assertions
+console.assert(1==1); // returns nothing
+console.assert('one'==1); // return Assertion failed error
+
+
+
