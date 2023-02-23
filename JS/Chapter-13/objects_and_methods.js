@@ -64,3 +64,36 @@ console.log(student.address.city);
 console.log(student.address["street"]);
 console.log(student["address"]["state"]);
 
+
+
+
+
+
+// In JavaScript, the this keyword refers to an object.
+
+const persons = {
+    fname : "ABC",
+    lname : "CBA",
+    age : 12,
+    name : function(){
+        return this.fname + " " + this.lname;
+    } 
+}
+
+persons.name();
+persons.name; // returns function definition
+
+
+// learning about getters and setter i.e. get methods and set methods
+const fruit = {
+    name: "apple",
+    color: "red",
+    taste: "sweet",
+    get_name(){ return this.name},
+    get_taste(){return this.taste},
+    set_color(value){this.color = value}
+};
+
+fruit.get_taste();
+fruit.set_color("green");
+fruit.color
