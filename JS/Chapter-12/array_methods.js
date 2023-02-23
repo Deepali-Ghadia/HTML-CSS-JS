@@ -53,3 +53,37 @@ console.log(fruits);
 const fruits = new Array("Apple", "Mango", "Banana", "Kiwi");
 const fav = fruits.slice(2); // contains elements starting from the 2nd index
 console.log(fav);
+
+// sorting arrays in alphabetical order
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.sort()); 
+// sort function will produce incorrect result in case of number array
+
+// reversing an array
+fruits.sort();
+fruits.reverse();
+console.log(fruits);
+
+// sorting an integer array
+const numbers = [1, 2, 3, 4, 54, 0, 23, 45, 43];
+numbers.sort();
+console.log(numbers); // [0, 1, 2, 23, 3, 4, 43, 45, 54] ====> wrong output
+numbers.sort(function(a, b){return a-b});
+console.log(numbers); // ascending order
+
+numbers.sort(function(a, b){return b-a});
+console.log(numbers); // descending order
+
+
+// finding the highest or lowest array value
+// step1: sort the array
+// arr[0]: lowest value
+// arr[arr.length-1]: highest value
+var arr = new Array(1, 34, 21, 9, 54, 22, 12)
+arr.sort(function(a,b){return a-b});
+console.log(arr)
+console.log("Min value: ", arr[0]);
+console.log("Max Value: ", arr[arr.length - 1]);
+
+
+
