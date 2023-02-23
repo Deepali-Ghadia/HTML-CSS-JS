@@ -31,6 +31,8 @@ console.log(Math.asin(90)); // reverse of sine
 console.log(Math.cos(90));
 
 // Bitwise Operators
+// Numbers with more than 32 bits discard their most significant bits. For example, the following integer with more
+// than 32 bits is converted to a 32-bit integer:
 var a = 101
 var b = 110
 console.log(a | b);
@@ -59,3 +61,4 @@ console.log(Math.max(-1000, 100));
 
 // getting roots of a number
 console.log(Math.sqrt(1024));
+
