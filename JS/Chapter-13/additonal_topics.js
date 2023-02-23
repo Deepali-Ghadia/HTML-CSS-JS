@@ -65,3 +65,43 @@ const fruit = {
 fruit.gettaste(); // 'sweet'
 fruit.setcolor("green");
 fruit.color // 'green'
+
+
+// Object.seal() method
+// The Object.seal() static method seals an object. Sealing an object prevents extensions and makes existing properties non-configurable. A sealed object has a fixed set of properties. Values of existing properties can still be changed as long as they are writable. 
+// seal() returns the same object that was passed in.
+const obj1 = {"Aname":"A", "Bname":"B", "Cname":"C"}
+Object.seal(obj1);
+console.log(obj1); 
+obj1.Aname = "Z";
+Object.defineProperty(obj1, "Dname", {value: "D"})
+console.log(obj1); 
+// gives typeError: Cannot define property Dname, object is not extensible
+
+// convert object's value to array
+const obj = new Object();
+obj.name = "Deepali";
+obj.surname = "Ghadia";
+obj.roll_number = 101;
+obj.email_id = "deepaligmail.com";
+obj.state = "Maharashtra";
+obj.city = "Wardha";
+
+var array = Object.keys(obj).map(function(key) {
+    return obj[key];
+ });
+console.log(array); 
+
+
+// make a property read-only
+const obj1 = {"Aname":"A", "Bname":"B", "Cname":"C"}
+Object.defineProperty(obj1, "Dname", {value: "D", writable: false});
+console.log(obj1); 
+obj1.Dname = "F";
+// value will not be overwritten
+
+// Object.keys(object)
+// Object.keys(obj) returns an array of a given object's keys
+
+// Object.values(object)
+// The Object.values() method returns an array of a given object's own enumerable property values, in the sameorder as that provided by a for...in loop 
