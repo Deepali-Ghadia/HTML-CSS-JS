@@ -27,7 +27,7 @@ class Car {
 
 class Model extends Car {
     constructor(brand, mod) {
-        super(brand);
+        super(brand); // this value is to be taken from parent class
         this.model = mod;
   }
     show() {
@@ -37,3 +37,28 @@ class Model extends Car {
 
 const mycar = new Model("Ford", "Mustang")
 console.log(mycar);
+
+
+// Static Methods
+// Static methods and properties are defined on the class/constructor itself, not on instance objects. These are specified in a class definition by using the static keyword.
+// You can call the static method on the class but not on the object.
+class Car {
+    constructor(name) {
+      this.name = name;
+    }
+    static hello() {
+      return "Hello!!";
+    }
+  }
+  
+  let myCar = new Car("Ford");
+  
+  // You can call 'hello()' on the Car Class:
+  document.getElementById("demo").innerHTML = Car.hello();
+  
+  // But NOT on a Car Object:
+  // document.getElementById("demo").innerHTML = myCar.hello();
+//   ====> this will raise an error.
+
+
+
