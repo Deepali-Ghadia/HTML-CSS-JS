@@ -21,4 +21,4 @@ class Car {
   }
   
   let myCar = new Model("Ford", "Mustang");
-  document.getElementById("demo").innerHTML = myCar.show();
+  console.log(myCar.show());
